@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*  MARGIN  */
+.m-5{
+    margin:50px;
+}
+
+.m-10{
+    margin: 10px;
+}
+
+.m-15{
+    margin: 15px;
+}
+
+.m-20{
+    margin: 20px;
+}
+
+.m-25{
+    margin: 25px;
+}
+
+.m-30{
+    margin: 30px;
+}
+
+/*  PADDING   */
+.p-5{
+    padding: 5px;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.p-15{
+    padding: 15px;
+}
+
+.p-20{
+    padding: 20px;
+}
+
+.p-25{
+    padding: 25px;
+}
+
+.p-30{
+    padding: 30px;
+}
+
+/*   DISPLAY    */
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.block{
+    display: block;
+}
+
+.none{
+    display: none;
+}
+
+/*  FLEX    */
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 2;
+}
+.flex-3{
+    flex: 3;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row; 
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+/*  GAP  */
+.g-5{
+    gap: 5px;
+}
+
+.g-10{
+    gap: 10px;
+}
+
+.g-15{
+    gap: 15px;
+}
+
+.g-20{
+    gap: 20px;
+}
+
+.g-25{
+    gap: 25px;
+}
+
+.g-30{
+    gap: 30px;
+}
+
+.g-40{
+    gap: 40px;
+}
+
+/*   POSITION   */
+.absolute{
+    position: absolute;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.relative{
+    position: relative;
+}
+
+.sticky{
+    position: sticky;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.txt-alg{
+    text-align: center;
+}
+
+.alg-itm{
+    align-items: center;
+}
+
+/*  BOX   */
+.box{
+    box-shadow: 0px 4px 8px rgb(0 0 1/20%), 0px 12px 18px rgb(0 10 0/15%);
+}
+
+/* STYLE */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

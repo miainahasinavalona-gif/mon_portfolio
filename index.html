@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../exercice/assets/css/main.css">
+    <title>Portfolio - Miaina HASINAVALONA</title>
+</head>
+
+<body>
+
+    <div class="container flex column">
+
+        <!-- EN TETE -->
+        <nav id="nav" class="flex alg-itm">
+            <a href="#" class="nav-logo">MH<span>.</span></a>
+            <ul class="nav-links flex g-20" id="navLinks">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero relative grid alg-itm g-40" id="home">
+            <div class="header-orb absolute orb1"></div>
+            <div class="header-orb absolute orb2"></div>
+            <div class="header-orb absolute orb3"></div>
+
+            <div class="hero-text relative">
+                <div class="hero-dispo g-10 alg-itm">Disponible · Madagascar</div>
+                <h1 class="hero-name">
+                    <span class="H">HASINAVALONA</span><br>
+                    Miaina <span class="F">Fandresena</span>
+                </h1>
+                <p class="header-sub"><strong>Étudiant en Informatique</strong> — L2 ISSIG Antananarivo</p>
+                <p class="hero-desc">
+                    Passionné par le développement web, la programmation orientée objet et le design d'interfaces.
+                    Je construis des solutions propres, j'apprends vite et je cherche à contribuer à des projets qui ont
+                    de l'impact.
+                </p>
+                <div class="hero-btn flex g-15">
+                    <a href="#projects" class="btn-p">Voir mes projets</a>
+                    <a href="#contact" class="btn-c">Me contacter</a>
+                </div>
+            </div>
+
+            <div class="hero-photo relative flex column align-items">
+                <div class="photo-outer relative">
+                    <div class="photo-ring1 absolute"></div>
+                    <div class="photo-ring2 absolute"></div>
+                    <div class="photo-inner">
+                        <img class="block" src="../exercice/assets/image/3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-badge txt-alg">L2 Info · ISSIG 2026</div>
+            </div>
+        </section>
+
+        <!-- SECTION A PROPOS -->
+        <section id="about" class="relative">
+            <p class="sec-label reveal">À propos</p>
+            <h2 class="sec-title reveal">Qui suis-<span>je</span> ?</h2>
+            <div class="about-grid grid">
+                <div class="reveal-l">
+                    <div class="about-text">
+                        <p>Je m'appelle <strong>Miaina Fandresena Hasinavalona</strong>, étudiant en 2ème année
+                            Informatique à l'ISSIG d'Antananarivo, Madagascar.</p>
+                        <p>Mon parcours allie <strong>programmation Java</strong>, développement web front-end, gestion
+                            de bases de données et création de documents. Passionné par le <strong>design
+                                UI/UX</strong>, je construis des interfaces soignées et mémorables.</p>
+                        <p>En dehors du code, je pratique le piano, le tennis de table et le basket.</p>
+                    </div>
+                    <div class="stats-row grid">
+                        <div class="stat-box reveal d1">
+                            <div class="stat">2+</div>
+                            <div class="stat-text">Ans d'études en info</div>
+                        </div>
+                        <div class="stat-box reveal d2">
+                            <div class="stat">5+</div>
+                            <div class="stat-text">Projets réalisés</div>
+                        </div>
+                        <div class="stat-box reveal d3">
+                            <div class="stat">3</div>
+                            <div class="stat-text">Langues parlées</div>
+                        </div>
+                        <div class="stat-box reveal d4">
+                            <div class="stat">1</div>
+                            <div class="stat-text">Stage professionnel</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-list flex g-10 column reveal-r">
+                    <div class="info-row flex"><span class="info-ico">📍</span>
+                        <div>
+                            <div class="info">Localisation</div>
+                            <div class="info-text">Ambohimirary, Antananarivo · Madagascar</div>
+                        </div>
+                    </div>
+                    <div class="info-row flex"><span class="info-ico">🎓</span>
+                        <div>
+                            <div class="info">Formation</div>
+                            <div class="info-text">ISSIG · L2 Informatique · 2026</div>
+                        </div>
+                    </div>
+                    <div class="info-row flex"><span class="info-ico">✉️</span>
+                        <div>
+                            <div class="info">Email</div>
+                            <a href="mailto:miainahasinavalona@gmail.com"
+                                class="info-text">miainahasinavalona@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-row flex"><span class="info-ico">📞</span>
+                        <div>
+                            <div class="info">Whatsapp</div>
+                            <a href="" class="info-text">+261 38 13 597 53</a>
+                        </div>
+                    </div>
+                    <div class="info-row flex"><span class="info-ico">🔗</span>
+                        <div>
+                            <div class="info">LinkedIn</div>
+                            <a href="https://www.linkedin.com/in/miaina-hasinavalona-180b0389?utm_source=share&utm_campaign=share_via&
+                            utm_content=profil&utm_medium=androidè_app" class="info-text">Miaina Hasinavalona</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <p class="sec-label reveal">Compétences</p>
+            <h2 class="sec-title reveal">Stack <span>technique</span></h2>
+            <div class="skills-grid grid g-20">
+                <div class="skill-card relative reveal d1" data-pct="75">
+                    <div class="sk-ico">🌐</div>
+                    <div class="sk-name">HTML / CSS / JavaScript</div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width:0"></div>
+                    </div>
+                    <div class="sk-pct">75%</div>
+                </div>
+                <div class="skill-card relative reveal d2" data-pct="60">
+                    <div class="sk-ico">☕</div>
+                    <div class="sk-name">Java (POO)</div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width:0"></div>
+                    </div>
+                    <div class="sk-pct">60%</div>
+                </div>
+                <div class="skill-card relative reveal d3" data-pct="50">
+                    <div class="sk-ico">🐍</div>
+                    <div class="sk-name">Python</div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width:0"></div>
+                    </div>
+                    <div class="sk-pct">50%</div>
+                </div>
+                <div class="skill-card relative reveal d4" data-pct="60">
+                    <div class="sk-ico">🗄️</div>
+                    <div class="sk-name">SQL / Base de données</div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width:0"></div>
+                    </div>
+                    <div class="sk-pct">60%</div>
+                </div>
+                <div class="skill-card relative reveal d5" data-pct="50">
+                    <div class="sk-ico">🎨</div>
+                    <div class="sk-name">UI Design & Maquettes</div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width:0"></div>
+                    </div>
+                    <div class="sk-pct">50%</div>
+                </div>
+                <div class="skill-card relative reveal d1" data-pct="85">
+                    <div class="sk-ico">📄</div>
+                    <div class="sk-name">Bureautique Office</div>
+                    <div class="bar-bg">
+                        <div class="bar-fill" style="width:0"></div>
+                    </div>
+                    <div class="sk-pct">85%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARCOURS -->
+        <section id="parcours">
+            <p class="sec-label reveal">Parcours</p>
+            <h2 class="sec-title reveal">Expérience & <span>Éducation</span></h2>
+
+
+            <div class="two-column grid">
+
+                <!-- EXPERIENCE PROFESSIONNELLE -->
+                <div class="reveal-l">
+                    <div class="tl-section-title pro">— Expérience Professionnelle</div>
+                    <div class="timeline relative">
+                        <div class="tl-item relative">
+                            <div class="tl-dot absolute"></div>
+                            <div class="tl-top flex g-10">
+                                <div class="tl-role">Stage d'observation</div>
+                                <span class="tl-pill pro-t">Juil. 2025</span>
+                            </div>
+                            <div class="tl-org">MADACAN - SARLU</div>
+                            <ul class="tl-list">
+                                <li>Immersion d'un mois en milieu professionnel informatique</li>
+                                <li>Acquisition de compétences techniques et pratiques</li>
+                                <li>Découverte des outils et méthodes de travail en entreprise</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item relative">
+                            <div class="tl-dot absolute"></div>
+                            <div class="tl-top flex g-10">
+                                <div class="tl-role">Formation — Initiation au codage</div>
+                                <span class="tl-pill pro-t">Avr. 2026</span>
+                            </div>
+                            <div class="tl-org">Orange Digital Center</div>
+                            <ul class="tl-list">
+                                <li>Formation intensive sur Python et les bases de données</li>
+                                <li>Apprentissage collaboratif orienté projets pratiques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDUCATION -->
+                <div class="reveal-r">
+                    <div class="tl-section-title educ">— Éducation</div>
+                    <div class="timeline relative">
+                        <div class="tl-item relative">
+                            <div class="tl-dot absolute gd"></div>
+                            <div class="tl-top flex g-10">
+                                <div class="tl-role">2e Année Informatique (L2)</div>
+                                <span class="tl-pill educ-c">2026</span>
+                            </div>
+                            <div class="tl-org go">ISSIG – Antananarivo</div>
+                            <ul class="tl-list">
+                                <li>Java OOP · SGBD · Merise · Algèbre relationnelle</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item relative">
+                            <div class="tl-dot absolute gd"></div>
+                            <div class="tl-top flex g-10">
+                                <div class="tl-role">1ère Année Informatique</div>
+                                <span class="tl-pill educ-c">2025</span>
+                            </div>
+                            <div class="tl-org go">Université Privée HECMMA – Antananarivo</div>
+                            <ul class="tl-list">
+                                <li>Bases de l'informatique et de la programmation</li>
+                            </ul>
+                        </div>
+                        <div class="tl-item relative">
+                            <div class="tl-dot absolute gd"></div>
+                            <div class="tl-top flex g-10">
+                                <div class="tl-role">Baccalauréat</div>
+                                <span class="tl-pill educ-c">2024</span>
+                            </div>
+                            <div class="tl-org go">Lycée Privé FJKM Thomas Bevan – Toamasina</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <p class="sec-label reveal">Projets</p>
+            <h2 class="sec-title reveal">Ce que j'ai <span>construit</span></h2>
+
+            <!-- CARD -->
+            <div class="proj-grid g-20 grid">
+
+                <div class="proj-card relative p-25 reveal d1">
+                    <div class="p-head flex"><span class="p-ico">📊</span><span class="p-status ps-done">Terminé</span>
+                    </div>
+
+                    <div class="p-title">Gestion Étudiante — Java Swing</div>
+                    <p class="p-desc">Application de gestion étudiante avec interface graphique JFrame, architecture MVC
+                        et palette dark personnalisée.</p>
+                    <div class="p-tags flex wrap">
+                        <span class="tag">Java</span><span class="tag">Swing</span><span class="tag">JFrame</span><span
+                            class="tag">MVC</span>
+                    </div>
+                </div>
+
+                <div class="proj-card relative p-25 reveal d2">
+                    <div class="p-head flex"><span class="p-ico">🏥</span><span class="p-status ps-done">Terminé</span>
+                    </div>
+
+                    <div class="p-title">Simulation Cabinet Médical</div>
+                    <p class="p-desc">Modélisation orientée objet d'un cabinet médical avec héritage, encapsulation et
+                        architecture multi-packages.</p>
+                    <div class="p-tags flex wrap">
+                        <span class="tag">Java</span><span class="tag">POO</span><span class="tag">Héritage</span><span
+                            class="tag">Multi-packages</span>
+                    </div>
+                </div>
+
+                <div class="proj-card relative p-25 wip reveal d4">
+                    <div class="p-head flex"><span class="p-ico">🚗</span><span class="p-status ps-wip">En cours</span>
+                    </div>
+                    <div class="p-title">Site Web — Vente Automobile</div>
+                    <p class="p-desc">Plateforme web de vente et présentation de véhicules. Front-end terminé, back-end
+                        et déploiement en cours de développement.</p>
+                    <div class="p-tags flex wrap" style="margin-bottom:10px">
+                        <span class="tag td">✓ HTML5</span>
+                        <span class="tag td">✓ CSS3</span>
+                        <span class="tag td">✓ JavaScript</span>
+                        <span class="tag tw">◷ Backend</span>
+                        <span class="tag tw">◷ Base de données</span>
+                        <span class="tag tw">◷ Hébergement</span>
+                        <span class="tag tw">◷ Nom de domaine</span>
+                    </div>
+                    <div class="wip-prog">
+                        <div class="wip-lbl flex"><span>Progression globale</span><span>40%</span></div>
+                        <div class="wip-bg">
+                            <div class="wip-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTIVITES -->
+        <section>
+            <div class="two-column grid">
+                <div class="reveal-l">
+                    <p class="sec-label">Langues</p>
+                    <h2 class="sec-title" style="font-size:1.6rem;margin-bottom:28px">Langues <span>parlées</span></h2>
+                    <div class="lang-list flex column g-20">
+                        <div class="lang-item">
+                            <div class="l-head flex"><span class="l-name">Malagasy</span><span class="l-level">Langue
+                                    natale</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill gold-fill" data-pct="100" style="width:0"></div>
+                            </div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="l-head flex"><span class="l-name">Français</span><span
+                                    class="l-level">Courant</span>
+                            </div>
+                            <div class="bar-bg">
+                                <div class="bar-fill gold-fill" data-pct="85" style="width:0"></div>
+                            </div>
+                        </div>
+                        <div class="lang-item">
+                            <div class="l-head flex"><span class="l-name">Anglais</span><span
+                                    class="l-level">Intermédiaire</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill gold-fill" data-pct="58" style="width:0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal-r">
+                    <p class="sec-label">Activités</p>
+                    <h2 class="sec-title" style="font-size:1.6rem;margin-bottom:28px">Centres d'<span>intérêt</span>
+                    </h2>
+                    <div class="act-grid g-10 grid">
+                        <div class="act-item flex alg-itm"><span class="aico">🏓</span>Tennis de table</div>
+                        <div class="act-item flex alg-itm"><span class="aico">🎹</span>Piano</div>
+                        <div class="act-item flex alg-itm"><span class="aico">🏀</span>Basket</div>
+                        <div class="act-item flex alg-itm"><span class="aico">🎮</span>Free Fire — The Royality</div>
+                        <div class="act-item flex alg-itm"><span class="aico">🎨</span>Design graphique & UI</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="contact-card relative txt-alg reveal">
+                <div class="contact-inner relative">
+                    <p class="sec-label" style="margin-bottom:10px">Contact</p>
+                    <div class="c-title">Travaillons ensemble 🚀</div>
+                    <p class="c-sub">Disponible pour des stages, collaborations ou opportunités académiques.</p>
+                    <div class="c-links flex g-15 jcc">
+                        <a href="mailto:miainahasinavalona@gmail.com" class="c-link">✉️ miainahasinavalona@gmail.com</a>
+                        <a href="tel:+261326164565" class="c-link flex g-10 alg-itm">📞 Téléphone</a>
+                        <a href="https://www.linkedin.com/in/miaina-hasinavalona-180b0389?utm_source=share&utm_campaign=share_via&
+                        utm_content=profil&utm_medium=androidè_app" class="c-link flex g-10 alg-itm">🔗 LinkedIn —
+                            Miaina Hasinavalona</a>
+                        <a href="#" class="c-link flex g-10 alg-itm">📍 Antananarivo, Madagascar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="txt-alg">
+            <p>Conçu & développé par <span>Miaina Fandresena Hasinavalona</span> · 2026</p>
+        </footer>
+
+    </div>
+
+    <script src="../exercice/assets/js/javascrp.js"></script>
+</body>
+
+</html>
