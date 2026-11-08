@@ -158,8 +158,45 @@ body{
 
 /*  BOX   */
 .box{
-    box-shadow: 0px 4px 8px rgb(0 0 1/20%), 0px 12px 18px rgb(0 10 0/15%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05), 0 12px 18px rgba(0, 0, 0, 0.1);
 }
+
+.box-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.box-md {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.box-lg {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* BORDER RADIUS */
+.rounded-sm { border-radius: 4px; }
+.rounded { border-radius: 8px; }
+.rounded-md { border-radius: 12px; }
+.rounded-lg { border-radius: 16px; }
+.rounded-xl { border-radius: 24px; }
+.rounded-full { border-radius: 9999px; }
+
+/* TRANSITIONS */
+.transition-fast { transition: all 150ms ease; }
+.transition-base { transition: all 250ms ease; }
+.transition-slow { transition: all 350ms ease; }
+
+/* TEXT */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* FONT WEIGHT */
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
 
 /* STYLE */
 ul {

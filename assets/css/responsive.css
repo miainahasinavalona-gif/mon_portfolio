@@ -1,39 +1,45 @@
 /* ===========================================================
-   RESPONSIVE
+   RESPONSIVE - Enhanced
 =========================================================== */
-@media (max-width: 900px) {
+
+/* Large tablets and small laptops */
+@media (max-width: 1024px) {
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
-        padding-top: 100px
+        padding-top: 100px;
+        gap: 40px;
     }
 
     .hero-photo {
         order: -1;
-        margin: 0 auto 32px
+        margin: 0 auto 24px;
     }
 
-    .hero-chip,
-    .hero-btn, 
-    .c-link {
-        justify-content: center
+    .hero-btn {
+        justify-content: center;
     }
 
     .hero-desc {
-        margin: 18px auto 0
+        margin: 18px auto 0;
+    }
+
+    .hero-dispo {
+        margin: 0 auto 24px;
     }
 
     .about-grid,
     .two-column {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .skills-grid {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .proj-grid {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
 
     .nav-links {
@@ -43,117 +49,484 @@
         top: 100%;
         left: 0;
         right: 0;
-        background: rgba(9, 21, 43, .97);
+        background: rgba(15, 23, 42, 0.98);
         padding: 20px 6%;
-        border-bottom: 1px solid var(--border-soft)
+        border-bottom: 1px solid var(--border-soft);
+        gap: 8px;
     }
 
     .nav-links.open {
         display: flex;
+        animation: slideDown 0.3s ease;
     }
 
-    .nav-toggle {
-        display: flex;
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
-    .c-links {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 5px;
-        font-size: .5rem;
-    }
-}
-
-/* Tablette */
-@media (max-width: 770px) {
-
-    .header-nav {
-        font-size: -5px;
-        padding: 0;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
+    .nav-links a {
+        padding: 14px 16px;
+        font-size: 0.85rem;
+        border-radius: 8px;
         text-align: center;
-        padding-top: 100px
     }
 
-    .hero-photo {
-        margin: 0 auto 60px
-    }
-
-    .hero-chip,
-    .hero-btn,
-    .c-link {
-        justify-content: center
-    }
-
-    .hero-desc {
-        margin: 18px auto 0
-    }
-
-    .about-grid,
-    .two-column {
-        grid-template-columns: 1fr
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr 1fr
-    }
-
-    .proj-grid {
-        grid-template-columns: 1fr
-    }
-
-    .nav-links {
+    .nav-links a::after {
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgba(9, 21, 43, .97);
-        padding: 20px 6%;
-        border-bottom: 1px solid var(--border)
     }
 
-    .nav-links.open {
-        display: flex
+    .nav-links a:hover {
+        background: var(--bg-hover);
     }
-
-    .nav-toggle {
-        display: flex; 
-    }
-
-    .c-links {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 5px;
-        font-size: .8rem;
-    }
-}
-
-/* Mobile */
-@media (max-width:560px) {
 
     .nav-toggle {
         display: flex;
     }
 
-    .skills-grid {
-        grid-template-columns: 1fr
+    .c-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
 
-    .stats-row,
+    .c-link {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .photo-outer {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 5% 60px;
+        min-height: auto;
+    }
+
+    .hero-name {
+        font-size: clamp(2.2rem, 8vw, 3.5rem);
+    }
+
+    .hero-sub {
+        font-size: 1rem;
+    }
+
+    .hero-desc {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+
+    .btn-p,
+    .btn-c {
+        padding: 14px 24px;
+        font-size: 0.85rem;
+    }
+
+    .photo-outer {
+        width: 200px;
+        height: 200px;
+    }
+
+    .photo-ring1 {
+        inset: -10px;
+    }
+
+    .photo-ring2 {
+        inset: -22px;
+    }
+
+    .about-grid {
+        gap: 32px;
+    }
+
+    .stats-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .stat-box {
+        padding: 18px 20px;
+    }
+
+    .stat {
+        font-size: 1.8rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .skill-card {
+        padding: 24px 20px;
+        border-radius: 16px;
+    }
+
+    .sk-ico {
+        font-size: 1.5rem;
+    }
+
+    .sk-name {
+        font-size: 0.88rem;
+    }
+
+    .two-column {
+        gap: 32px;
+    }
+
+    .timeline {
+        padding-left: 28px;
+    }
+
+    .timeline::before {
+        left: 6px;
+    }
+
+    .tl-dot {
+        left: -28px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .tl-role {
+        font-size: 0.92rem;
+    }
+
+    .proj-grid {
+        gap: 20px;
+    }
+
+    .proj-card {
+        padding: 24px 20px;
+        border-radius: 16px;
+    }
+
+    .p-title {
+        font-size: 0.98rem;
+    }
+
+    .p-desc {
+        font-size: 0.85rem;
+    }
+
     .act-grid {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .act-item {
+        padding: 14px 16px;
+        font-size: 0.82rem;
     }
 
     .contact-card {
-        padding: 36px 20px
+        padding: 48px 24px;
+        border-radius: 20px;
+    }
+
+    .c-title {
+        font-size: clamp(1.6rem, 4vw, 2rem);
+    }
+
+    .c-link {
+        padding: 14px 18px;
+        font-size: 0.85rem;
     }
 
     section {
-        padding: 70px 5%
+        padding: 70px 5%;
+    }
+
+    footer {
+        padding: 28px 5%;
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .hero {
+        padding: 90px 4% 50px;
+    }
+
+    .hero-name {
+        font-size: clamp(2rem, 10vw, 2.8rem);
+        line-height: 1.1;
+    }
+
+    .hero-dispo {
+        font-size: 0.65rem;
+        padding: 6px 14px;
+    }
+
+    .hero-sub {
+        font-size: 0.9rem;
+    }
+
+    .hero-desc {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .hero-btn {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .btn-p,
+    .btn-c {
+        width: 100%;
+        padding: 16px 24px;
+        font-size: 0.9rem;
+    }
+
+    .photo-outer {
+        width: 180px;
+        height: 180px;
+    }
+
+    .photo-badge {
+        font-size: 0.65rem;
+        padding: 8px 14px;
+    }
+
+    .sec-title {
+        font-size: clamp(1.4rem, 5vw, 1.8rem);
+        margin-bottom: 32px;
+    }
+
+    .about-text p {
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+    .stats-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .stat-box {
+        padding: 16px 18px;
+    }
+
+    .stat {
+        font-size: 1.6rem;
+    }
+
+    .info-row {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .info-ico {
+        font-size: 1rem;
+        width: 24px;
+    }
+
+    .info {
+        font-size: 0.6rem;
+    }
+
+    .info-text {
+        font-size: 0.82rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .skill-card {
+        padding: 22px 18px;
+    }
+
+    .timeline {
+        padding-left: 24px;
+    }
+
+    .timeline::before {
+        left: 5px;
+    }
+
+    .tl-dot {
+        left: -24px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .tl-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .tl-pill {
+        font-size: 0.65rem;
+        padding: 4px 10px;
+    }
+
+    .tl-role {
+        font-size: 0.88rem;
+    }
+
+    .tl-org {
+        font-size: 0.78rem;
+    }
+
+    .tl-list li {
+        font-size: 0.8rem;
+        padding-left: 14px;
+    }
+
+    .proj-grid {
+        gap: 16px;
+    }
+
+    .proj-card {
+        padding: 20px 16px;
+        border-radius: 14px;
+    }
+
+    .p-title {
+        font-size: 0.92rem;
+    }
+
+    .p-desc {
+        font-size: 0.8rem;
+    }
+
+    .p-tags {
+        gap: 6px;
+    }
+
+    .tag {
+        font-size: 0.62rem;
+        padding: 4px 10px;
+    }
+
+    .act-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .act-item {
+        padding: 14px 16px;
+        font-size: 0.85rem;
+    }
+
+    .lang-item .l-head {
+        font-size: 0.85rem;
+    }
+
+    .l-name {
+        font-size: 0.9rem;
+    }
+
+    .contact-card {
+        padding: 36px 18px;
+        border-radius: 18px;
+    }
+
+    .c-title {
+        font-size: 1.5rem;
+    }
+
+    .c-sub {
+        font-size: 0.88rem;
+        margin-bottom: 28px;
+    }
+
+    .c-link {
+        padding: 14px 16px;
+        font-size: 0.82rem;
+        gap: 10px;
+    }
+
+    section {
+        padding: 60px 4%;
+    }
+
+    footer {
+        padding: 24px 4%;
+        font-size: 0.7rem;
+    }
+
+    footer p {
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+    .hero-name {
+        font-size: 1.9rem;
+    }
+
+    .nav-logo {
+        font-size: 1rem;
+    }
+
+    .nav-toggle span {
+        width: 20px;
+    }
+
+    .stat {
+        font-size: 1.4rem;
+    }
+
+    .skill-card {
+        padding: 20px 16px;
+    }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 80px 5% 60px;
+    }
+
+    .hero-photo {
+        order: 0;
+        margin: 0 0 0 auto;
+        max-width: 180px;
+    }
+
+    .hero-text {
+        text-align: left;
+        max-width: 60%;
+    }
+
+    .hero-btn {
+        justify-content: flex-start;
+    }
+
+    .hero-dispo {
+        margin: 0 0 20px;
+    }
+
+    .hero-desc {
+        margin: 18px 0 0;
+    }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .photo-inner img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
     }
 }
